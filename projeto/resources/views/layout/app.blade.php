@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     
+    
     <title>Document</title>
 </head>
 <body>
     
- 
+    <div class="logo"></div>
     <div class="menu">
 
         @include('layout.menu')

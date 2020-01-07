@@ -7,18 +7,12 @@ body{
     background-color: #f9f9f9;
 }
 
+.logo{
 
-#check{
-
-    display: none;
+    padding: 30px;
+    background-color: #333;
 }
-#icone{
 
-    cursor: pointer;
-    padding: 15px;
-    position: absolute;
-    z-index: 1;
-}
 .barra{
 
     background-color: #333;
@@ -26,7 +20,7 @@ body{
     width: 300px;
     position: absolute;
     translate: all .2s linear;
-    left: -300px;
+    
 
 }
 
@@ -34,7 +28,7 @@ nav{
 
     width: 100%;
     position: absolute;
-    top: 60px;
+    
 
 
 }
@@ -53,8 +47,7 @@ nav a{
     transform: all .2s linear;
     color: white;
     border-bottom: 2px solid #222;
-    opacity: 1;
-    margin-top: 200px;
+
     
 }
 .link:hover{
@@ -63,17 +56,15 @@ nav a{
     color: #494950;
 
 }
-#check:checked ~ .barra{
-
-    transform: translateX(300px);
-
-    
+.container  {  	
+	margin: 1em auto;  	
+	width: 650px;  	
+	background: #fff;  
 }
-#check:checked ~ .barra nav a .link{
-
-    opacity: 1;
-    margin-top: 0;
-    transition-delay: .2s;  
-    
-    
+.contents  {  	
+	float: left;  	
+	width: 440px;  	
+	background: #9FC;  	
+    margin: 0 0 0 20px;  
+    border: blue;
 }
