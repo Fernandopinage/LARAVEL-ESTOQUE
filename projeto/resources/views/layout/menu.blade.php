@@ -3,11 +3,11 @@
 
     <nav>
 
-        <a href=""><div class="link">Home</div></a>
-        <a href=""><div class="link">ADD Funcionario</div></a>
-        <a href=""><div class="link">Home</div></a>
-        <a href=""><div class="link">Home</div></a>
-        <a href=""><div class="link">Home</div></a>
+        <a href="{{'/'}}"><div class="link">Painel</div></a>
+        <a href="{{'/fornecedor'}}"><div class="link">Fornecedores</div></a>
+        <a href="{{'/estoque'}}"><div class="link">Controle Estoque</div></a>
+        <a href="{{'/funcionario'}}"><div class="link">Funcionario</div></a>
+        <a href=""><div class="link">Sobre</div></a>
     </nav>
 
 </div>

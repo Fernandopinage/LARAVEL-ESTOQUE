@@ -17,12 +17,13 @@ Route::get('/', function () {
 
 */
 
-route::get('/',function(){
 
-    return view('layout.app');
-});
+//index
+route::get('/','geralController@index')->name('/home');
+//fornecedores
+route::get('/fornecedor', 'geralController@fornecedor')->name('/fornecedor');
+//estoque
+route::get('/estoque', 'geralController@estoque')->name('/estoque');
+//funcionario
+route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
 
-route::get('/home',function(){
-
-    return view('home');
-});

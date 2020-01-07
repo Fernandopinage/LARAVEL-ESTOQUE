@@ -11,6 +11,7 @@ body{
 
     padding: 30px;
     background-color: #333;
+   
 }
 
 .barra{
@@ -58,8 +59,9 @@ nav a{
 }
 .container  {  	
 	margin: 1em auto;  	
-	width: 650px;  	
-	background: #fff;  
+	width: 900px;  	
+    background: #fff;  
+    border: 1px solid blue;
 }
 .contents  {  	
 	float: left;  	

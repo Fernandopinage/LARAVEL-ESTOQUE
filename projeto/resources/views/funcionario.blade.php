@@ -1,5 +1,5 @@
 @extends('layout.app')
 
 @section('conteudo')
-    <h1>Painel</h1>
+    <h1>Funcionario</h1>
 @endsection
