@@ -14,9 +14,17 @@ class geralController extends Controller
     //--------- fim ----------
 
     // funçao fornecedor
-    public function fornecedor (){
+    public function controlerFornecedores (){
 
-        return view('fornecedor');
+        
+        return view('controlerFornecedores');
+    }
+    //--------- fim ----------
+    // funçao fornecedor
+    public function cadastrofornecedor (){
+
+        
+            return view('fornecedor');
     }
     //--------- fim ----------
     
@@ -31,6 +39,14 @@ class geralController extends Controller
     public function funcionario(){
 
         return view('funcionario');
+    }
+    //--------- fim ----------
+    
+    //funçao estoque
+    public function cadastrofuncionario(){
+
+        
+        return view('controlerFuncionario');
     }
     //--------- fim ----------
     

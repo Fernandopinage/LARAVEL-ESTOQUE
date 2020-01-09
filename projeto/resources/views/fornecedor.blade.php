@@ -2,9 +2,9 @@
 
 @section('conteudo')
     <div class="container">
-        <h1>Fornecedores</h1>
+        <h1>Cadastro Fornecedor</h1>
     </div>
-
+    
     <br>
     <div class="container">
 
@@ -18,7 +18,7 @@
                     </div>
                     <div class="form-group">
                         
-                        <label>Endereço:</label> <input type="text" name="" class="input-medio">
+                        <label>Rua:</label> <input type="text" name="" class="input-medio">
                         <label>Cidade:</label> <input type="text" name="" class="input-pequeno">
                         <label>Bairro:</label> <input type="text" name="" class="input-pequeno">
                     </div>
@@ -26,8 +26,9 @@
                         
                         <label>Telefone:</label> <input type="text" name="" class="input-pequeno">
                         <label>Celular:</label> <input type="text" name="" class="input-pequeno">
-                        <label>Marca:</label> <input type="text" name="" class="input-medio">
+                        
                     </div>
+                    <br>
                     <button class="btn-primary">Enviar</button>
             </form>
         </div>

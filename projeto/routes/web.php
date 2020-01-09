@@ -21,9 +21,13 @@ Route::get('/', function () {
 //index
 route::get('/','geralController@index')->name('/home');
 //fornecedores
-route::get('/fornecedor', 'geralController@fornecedor')->name('/fornecedor');
+route::get('/fornecedores', 'geralController@controlerFornecedores')->name('/fornecedores');
+//cadastro fornecedores
+route::get('/cadastrofornecedor', 'geralController@cadastrofornecedor')->name('/cadastrofornecedor');
 //estoque
 route::get('/estoque', 'geralController@estoque')->name('/estoque');
+//cadastro funcionario
+route::get('/funcionario', 'geralController@cadastrofuncionario')->name('/funcionario');
 //funcionario
-route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
+//route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
 
