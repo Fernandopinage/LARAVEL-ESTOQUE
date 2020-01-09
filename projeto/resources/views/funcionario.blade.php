@@ -1,5 +1,7 @@
 @extends('layout.app')
 
 @section('conteudo')
-    <h1>Funcionario</h1>
+<div class="container">
+     <h1>Funcionario</h1>
+</div>
 @endsection
