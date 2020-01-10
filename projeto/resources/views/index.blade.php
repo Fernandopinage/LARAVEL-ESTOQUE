@@ -15,8 +15,8 @@
                   <div class="form-group">
     
                      <label for="email" class="col-sm-4">Email:</label>
-                    <div class="col-sm-12">
-                        <input type="text" class="input-medio" name="email" id="email" placeholder="Email">
+                    <div>
+                        <input type="text" class="input-medio" name="email"  placeholder="Email">
                     </div>
     
                   </div>
@@ -24,8 +24,8 @@
     
                   <div class="form-group">
                     <label for="senha" class="col-sm-4">Password:</label>
-                    <div class="col-sm-12">
-                      <input type="password" class="input-medio" name="password" id="password" placeholder="Password">
+                    <div>
+                      <input type="password" class="input-medio" name="password"  placeholder="Password">
                     </div>
                   </div>
                   

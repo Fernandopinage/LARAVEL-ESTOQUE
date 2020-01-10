@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\User;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 
 class funcionarioController extends Controller
@@ -12,20 +13,20 @@ class funcionarioController extends Controller
     //****** validar login *********/
     public function validarLogin(Request $request){
 
-        //dd($request);
-
-        $credentials = $request->only('email', 'password');
-
-        if (Auth::attempt($credentials)) {
-            // Authentication passed...
-
-            return "aqui";
-            dd($credentials);
-            //return redirect()->intended('dashboard');
-        }else{
-            //dd($credentials);
-             echo"fudeu";
+        $dados = User::where('email',$request->email)->first();   
+        // se tiver um login cai na condição
+        if($dados){
+           // se tiver senha corretar cai na condiçao
+                if(Hash::check($request->password, $dados->password)){
+                    return redirect('/');
+                    
+                }else{
+            
+            return view('index');
+           }
+           return view('index');
         }
+        return view('index');
     }
     /** ******** fim ********** */
     public function validarFuncionario(Request $request){
@@ -33,7 +34,7 @@ class funcionarioController extends Controller
         $usuario = new User();
 
         $usuario->name = $request->name;
-        $usuario->password = $request->password;
+        $usuario->password = Hash::make($request->password);
         $usuario->email = $request->email;
         $usuario->sexo = $request->sexo;
         $usuario->cep = $request->cep;
