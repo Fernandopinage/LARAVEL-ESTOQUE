@@ -6,8 +6,9 @@
 
     <h1>Fornecedor</h1>
     <div class="text-right">
-      <button type="button" class="btn-success btn-lg"><a href="{{"/cadastrofornecedor"}}">cadastrar fornecedor</a></button>
-  </div>
+      <a class="btn-success btn-lg" href="{{"/cadastrofornecedor"}}">FORNECEDOR</a>
+    </div>
+    
 </div>
 <br>
 <div class="container">

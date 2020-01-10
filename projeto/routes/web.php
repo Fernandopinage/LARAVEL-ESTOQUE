@@ -27,7 +27,7 @@ route::get('/cadastrofornecedor', 'geralController@cadastrofornecedor')->name('/
 //estoque
 route::get('/estoque', 'geralController@estoque')->name('/estoque');
 //cadastro funcionario
-route::get('/funcionario', 'geralController@cadastrofuncionario')->name('/funcionario');
+route::get('/cadastrofuncionario', 'geralController@cadastrofuncionario')->name('/cadastrofuncionario');
 //funcionario
-//route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
+route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
 

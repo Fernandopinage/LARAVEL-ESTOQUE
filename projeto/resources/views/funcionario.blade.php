@@ -26,7 +26,7 @@
                         
                         <label>Telefone:</label> <input type="text" name="" class="input-pequeno">
                         <label>Celular:</label> <input type="text" name="" class="input-pequeno">
-                        <label>Marca Produto:</label> <input type="text" name="" class="input-medio">
+                        
                     </div>
                     <br>
                     <button class="btn-primary">Enviar</button>
