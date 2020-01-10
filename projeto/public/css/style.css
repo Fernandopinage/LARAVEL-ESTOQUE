@@ -73,11 +73,14 @@ nav a{
     border: 0px solid blue;
 }
 .contents  {  	
-	float: left;  	
-	width: 440px;  	
-	background: #9FC;  	
-    margin: 0 0 0 20px;  
-    border: blue;
+    margin-top: 200px;
+	padding:20px;	
+	margin-left: 560px;  	
+	width: 400px;  	
+    background: #fff;  
+    border-radius: 8px;
+    border: 0px solid blue;
+    box-shadow: 5px 5px 5px #494950;
 }
 .form-group{
     margin-bottom:1rem
@@ -222,6 +225,7 @@ button{
 .btn-primary{
     background-color: #007bff;
     color: white;
+    font-family: arial;
 }
 .btn-primary:hover{
     background-color: #065ab4;
@@ -229,6 +233,7 @@ button{
 .btn-success{
     background-color: #16be32;
     color: white;
+    font-family: arial;
 }
 
 .btn-success:hover{

@@ -17,9 +17,12 @@ Route::get('/', function () {
 
 */
 
+/***************************** rota das pagina view *************************************************** */
 
 //index
-route::get('/','geralController@index')->name('/home');
+route::get('index','geralController@index');
+//painel
+route::get('/','geralController@home')->name('/home');
 //fornecedores
 route::get('/fornecedores', 'geralController@controlerFornecedores')->name('/fornecedores');
 //cadastro fornecedores
@@ -31,3 +34,9 @@ route::get('/cadastrofuncionario', 'geralController@cadastrofuncionario')->name(
 //funcionario
 route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
 
+
+/***************************** rota do funcionario *************************************************** */
+// validando login
+route::POST('/validarLogin','funcionarioController@validarLogin')->name('/validarLogin');
+// inserindo dados no banco
+route::post('/cadastro','funcionarioController@validarFuncionario')->name('/cadastro');

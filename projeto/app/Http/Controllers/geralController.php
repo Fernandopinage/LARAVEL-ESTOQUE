@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 
 class geralController extends Controller
 {
-    // função index 
+
     public function index(){
+
+        return view('index');
+    }
+    // função index 
+    public function home(){
 
         return view('home');
     }
