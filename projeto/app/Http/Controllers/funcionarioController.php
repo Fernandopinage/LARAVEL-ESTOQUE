@@ -23,8 +23,8 @@ class funcionarioController extends Controller
             dd($credentials);
             //return redirect()->intended('dashboard');
         }else{
-
-            echo"fudeu";
+            //dd($credentials);
+             echo"fudeu";
         }
     }
     /** ******** fim ********** */
