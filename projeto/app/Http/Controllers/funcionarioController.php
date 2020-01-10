@@ -13,20 +13,18 @@ class funcionarioController extends Controller
     //****** validar login *********/
     public function validarLogin(Request $request){
 
-        $dados = User::where('email',$request->email)->first();   
-        // se tiver um login cai na condição
-        if($dados){
-           // se tiver senha corretar cai na condiçao
-                if(Hash::check($request->password, $dados->password)){
-                    return redirect('/');
-                    
-                }else{
-            
-            return view('index');
-           }
-           return view('index');
+        $credentials = $request->only('email', 'password');
+
+        //para que o Auth funcione a senha dos usuarios tem que esta criptografadas
+
+        if (Auth::attempt($credentials)) {
+            // 
+            return redirect('/');
+        }else{
+            return redirect('/index');
+
         }
-        return view('index');
+        
     }
     /** ******** fim ********** */
     public function validarFuncionario(Request $request){
