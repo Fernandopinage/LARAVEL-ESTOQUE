@@ -20,10 +20,10 @@ Route::get('/', function () {
 /***********************************grupo de rotas*********************************************** */
 
 //tela de login
-route::get('/login','geralController@index')->name('/login');
+route::get('login','geralController@index')->name('login');
 
 //grupo para middleware função nao deixa acessar outras pelas sem esta autenticado 
-Route::group(['middleware' => 'auth'], function () {
+//Route::group(['middleware' => 'auth','views'], function () {
     
     /***************************** rota das pagina view *************************************************** */
     
@@ -53,9 +53,9 @@ Route::group(['middleware' => 'auth'], function () {
     // validando login
     route::POST('/validarLogin','funcionarioController@validarLogin')->name('/validarLogin');
     
-});
+//});
 // sair login logaut
 
-route::get('/logaut','Auth\funcionarioController@logaut');
+route::get('/logaut','funcionarioController@logaut');
 
 
