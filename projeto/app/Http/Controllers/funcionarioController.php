@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 
 
+
 class funcionarioController extends Controller
 {
     //****** validar login *********/
@@ -50,5 +51,12 @@ class funcionarioController extends Controller
     }
      /** ******** fim ********** */
 
+     public function logaut(){
+
+
+        Auth::logout();
+        
+        return redirect("/login");
+     }
       
 }

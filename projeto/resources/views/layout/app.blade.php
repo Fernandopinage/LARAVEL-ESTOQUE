@@ -14,11 +14,7 @@
     <div class="logo">
         <div class="perfil">
             
-            @if (Auth::user()->name)
-            {{   Auth::user()->name }}    
-            @else
-               
-            @endif
+            {{Auth::user()->name}}
             <a href="{{'/logaut'}}">sair</a>
         </div>
     </div>

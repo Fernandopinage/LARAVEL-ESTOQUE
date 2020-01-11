@@ -8,9 +8,11 @@
     <title>Document</title>
     <div class="logo"></div>
     <div class="contents">
+
+    
         <form method="POST" action="/validarLogin">
 
-            {{ csrf_field() }}
+            @csrf
             
                   <div class="form-group">
     
