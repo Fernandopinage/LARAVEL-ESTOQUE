@@ -1,26 +1,11 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-/*
-Route::get('/', function () {
-    return view('welcome');
-});
 
-*
 
 /***********************************grupo de rotas*********************************************** */
 
 //tela de login
-route::get('/login','geralController@index')->name('/login');
+route::get('login','geralController@index')->name('/login');
 
 //grupo para middleware função nao deixa acessar outras pelas sem esta autenticado 
 //Route::group(['middleware' => 'auth','views'], function () {
@@ -28,7 +13,7 @@ route::get('/login','geralController@index')->name('/login');
     /***************************** rota das pagina view *************************************************** */
     
     //tela principal 
-    route::get('/','geralController@home')->name('/home');
+    route::get('/painel','geralController@home')->name('/painel');
     
     // tela de fornecedores
     route::get('/fornecedores', 'geralController@controlerFornecedores')->name('/fornecedores');

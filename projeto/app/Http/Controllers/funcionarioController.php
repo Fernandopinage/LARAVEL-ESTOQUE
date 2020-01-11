@@ -21,9 +21,9 @@ class funcionarioController extends Controller
 
         if (Auth::attempt($credentials)) {
             // 
-            return redirect('/');
+            return redirect('/painel');
         }else{
-            return redirect('/index');
+            return redirect('/login');
 
         }
         
@@ -56,7 +56,7 @@ class funcionarioController extends Controller
 
         Auth::logout();
         
-        return redirect("/login");
+        return redirect('login');
      }
       
 }
