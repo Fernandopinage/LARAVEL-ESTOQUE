@@ -10,6 +10,8 @@ route::get('/','geralController@index')->name('/');
 //grupo para middleware função nao deixa acessar outras pelas sem esta autenticado 
 
 /***************************** rota das pagina view *************************************************** */
+Route::group(['middleware' => 'auth'], function () {
+    
     
     //tela principal 
     route::get('/painel','geralController@home')->name('/painel');
@@ -32,7 +34,7 @@ route::get('/','geralController@index')->name('/');
     route::post('/cadastro','funcionarioController@insertFuncionario')->name('/cadastro');
     
     
-    
+});   
     /********************************************************************************************************* */
     // validando login
     route::POST('/validarLogin','funcionarioController@validarLogin')->name('/validarLogin');

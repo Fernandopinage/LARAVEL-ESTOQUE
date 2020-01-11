@@ -12,13 +12,13 @@
 <body>
     
     <div class="logo">
+        
         <div class="perfil">
             
             @if (Auth::guest())
             
-            
             @else
-            {{Auth::user()->name}} 
+            {{Auth::user()->email}} 
             <a href="{{'/logaut'}}">sair</a>
             
             @endif
