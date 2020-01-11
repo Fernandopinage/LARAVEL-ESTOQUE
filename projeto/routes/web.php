@@ -20,7 +20,7 @@ Route::get('/', function () {
 /***********************************grupo de rotas*********************************************** */
 
 //tela de login
-route::get('login','geralController@index')->name('login');
+route::get('/login','geralController@index')->name('/login');
 
 //grupo para middleware função nao deixa acessar outras pelas sem esta autenticado 
 //Route::group(['middleware' => 'auth','views'], function () {

@@ -9,12 +9,12 @@ class geralController extends Controller
 
     public function index(){
 
-        return view('index');
+        return view('telas.index');
     }
     // função index 
     public function home(){
 
-        return view('home');
+        return view('telas.home');
     }
     //--------- fim ----------
 
@@ -22,28 +22,28 @@ class geralController extends Controller
     public function controlerFornecedores (){
 
         
-        return view('controlerFornecedores');
+        return view('telas.controlerFornecedores');
     }
     //--------- fim ----------
     // funçao fornecedor
     public function cadastrofornecedor (){
 
         
-            return view('fornecedor');
+            return view('telas.fornecedor');
     }
     //--------- fim ----------
     
     //funçao estoque
     public function estoque(){
 
-        return view('estoque');
+        return view('telas.estoque');
     }
     //--------- fim ----------
 
     //funçao estoque
     public function funcionario(){
 
-        return view('funcionario');
+        return view('telas.funcionario');
     }
     //--------- fim ----------
     
@@ -51,7 +51,7 @@ class geralController extends Controller
     public function cadastrofuncionario(){
 
         
-        return view('controlerFuncionario');
+        return view('telas.controlerFuncionario');
     }
     //--------- fim ----------
     
