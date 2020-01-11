@@ -23,7 +23,7 @@ class funcionarioController extends Controller
             // 
             return redirect('/painel');
         }else{
-            return redirect('/login');
+            return redirect('/');
 
         }
         
@@ -56,7 +56,7 @@ class funcionarioController extends Controller
 
         Auth::logout();
         
-        return redirect('login');
+        return redirect('/');
      }
       
 }
