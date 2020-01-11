@@ -11,7 +11,19 @@
 </head>
 <body>
     
-    <div class="logo"></div>
+    <div class="logo">
+        <div class="perfil">
+            
+            @if (Auth::user()->name)
+            {{   Auth::user()->name }}    
+            @else
+               
+            @endif
+            <a href="{{'/logaut'}}">sair</a>
+        </div>
+    </div>
+
+
     <div class="menu">
 
         @include('layout.menu')

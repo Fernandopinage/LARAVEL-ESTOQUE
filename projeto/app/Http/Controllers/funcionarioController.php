@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\Support\Facades\Hash;
 
 
+
 class funcionarioController extends Controller
 {
     //****** validar login *********/
@@ -48,4 +49,6 @@ class funcionarioController extends Controller
 
     }
      /** ******** fim ********** */
+
+      
 }

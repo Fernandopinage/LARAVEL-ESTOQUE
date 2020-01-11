@@ -10,9 +10,14 @@ body{
 
 .logo{
 
-    padding: 30px;
+    padding: 25px;
     background-color: #333;
    
+}
+
+.perfil{
+    text-align:right!important;
+    color: white;
 }
 a{
     text-decoration: none;

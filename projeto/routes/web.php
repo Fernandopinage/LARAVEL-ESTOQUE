@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 
 *
+
 /***********************************grupo de rotas*********************************************** */
+
 //tela de login
 route::get('login','geralController@index')->name('login');
 
@@ -52,4 +54,10 @@ route::post('/cadastro','funcionarioController@insertFuncionario')->name('/cadas
 route::POST('/validarLogin','funcionarioController@validarLogin')->name('/validarLogin');
 
 });
+// sair login logaut
+route::get('/logaut',function(){
+
+    //Auth::logout();
+});
+
 
