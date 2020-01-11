@@ -8,9 +8,8 @@
 route::get('/','geralController@index')->name('/');
 
 //grupo para middleware função nao deixa acessar outras pelas sem esta autenticado 
-//Route::group(['middleware' => 'auth','views'], function () {
-    
-    /***************************** rota das pagina view *************************************************** */
+
+/***************************** rota das pagina view *************************************************** */
     
     //tela principal 
     route::get('/painel','geralController@home')->name('/painel');
@@ -38,9 +37,8 @@ route::get('/','geralController@index')->name('/');
     // validando login
     route::POST('/validarLogin','funcionarioController@validarLogin')->name('/validarLogin');
     
-//});
-// sair login logaut
 
+// sair login logaut
 route::get('/logaut','funcionarioController@logaut');
 
 
