@@ -27,7 +27,7 @@ class funcionarioController extends Controller
         
     }
     /** ******** fim ********** */
-    public function validarFuncionario(Request $request){
+    public function insertFuncionario(Request $request){
 
         $usuario = new User();
 

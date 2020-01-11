@@ -17,35 +17,39 @@ Route::get('/', function () {
 
 *
 /***********************************grupo de rotas*********************************************** */
-//index
+//tela de login
 route::get('login','geralController@index')->name('login');
 
-
+//grupo para middleware função nao deixa acessar outras pelas sem esta autenticado 
 Route::group(['middleware' => 'auth'], function () {
 
 /***************************** rota das pagina view *************************************************** */
 
-//painel
+//tela principal 
 route::get('/','geralController@home')->name('/home');
-//fornecedores
+
+// tela de fornecedores
 route::get('/fornecedores', 'geralController@controlerFornecedores')->name('/fornecedores');
-//cadastro fornecedores
+//tela de cadastro fornecedores
 route::get('/cadastrofornecedor', 'geralController@cadastrofornecedor')->name('/cadastrofornecedor');
-//estoque
+
+
+//tela de estoque
 route::get('/estoque', 'geralController@estoque')->name('/estoque');
-//cadastro funcionario
-route::get('/cadastrofuncionario', 'geralController@cadastrofuncionario')->name('/cadastrofuncionario');
-//funcionario
+
+//tela de funcionario
 route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
 
-    
+//cadastro funcionario
+route::get('/cadastrofuncionario', 'geralController@cadastrofuncionario')->name('/cadastrofuncionario');
+// inserindo dados do funcionario no banco
+route::post('/cadastro','funcionarioController@insertFuncionario')->name('/cadastro');
 
-/***************************** rota do funcionario *************************************************** */
-// inserindo dados no banco
-route::post('/cadastro','funcionarioController@validarFuncionario')->name('/cadastro');
+
+
+/********************************************************************************************************* */
+// validando login
+route::POST('/validarLogin','funcionarioController@validarLogin')->name('/validarLogin');
 
 });
 
-
-// validando login
-route::POST('/validarLogin','funcionarioController@validarLogin')->name('/validarLogin');
