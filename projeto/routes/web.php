@@ -18,7 +18,7 @@ Route::get('/', function () {
 *
 /***********************************grupo de rotas*********************************************** */
 //index
-route::get('index','geralController@index');
+route::get('login','geralController@index')->name('login');
 
 
 Route::group(['middleware' => 'auth'], function () {
