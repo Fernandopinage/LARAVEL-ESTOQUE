@@ -67,6 +67,11 @@ nav a{
     font-size: 18pt;
 
 }
+span{
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
 
 /****************************CSS do corpo********************************************/
 .container  {  

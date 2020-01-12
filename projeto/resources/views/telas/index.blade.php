@@ -18,7 +18,7 @@
     
                      <label for="email" class="col-sm-4">Email:</label>
                     <div>
-                        <input type="text" class="input-medio" name="email"  placeholder="Email">
+                        <span><img src='{{'img/email.png'}}'> </span> <input type="text" class="input-medio" name="email"  placeholder="Email">
                     </div>
     
                   </div>
@@ -27,7 +27,7 @@
                   <div class="form-group">
                     <label for="senha" class="col-sm-4">Password:</label>
                     <div>
-                      <input type="password" class="input-medio" name="password"  placeholder="Password">
+                      <span><img src='{{'img/key.png'}}'> </span><input type="password" class="input-medio" name="password"  placeholder="Password">
                     </div>
                   </div>
                   

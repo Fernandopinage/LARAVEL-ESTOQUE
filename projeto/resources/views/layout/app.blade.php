@@ -18,8 +18,8 @@
             @if (Auth::guest())
             
             @else
-            {{Auth::user()->email}} 
-            <a href="{{'/logaut'}}">sair</a>
+             <span><img src='{{'img/perfil.png'}}'>{{Auth::user()->name}}</span> 
+             <span><a href="{{'/logaut'}}">Sair<img src='{{'img/x2.png'}}'> </a></span> 
             
             @endif
            
