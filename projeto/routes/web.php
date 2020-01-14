@@ -1,6 +1,13 @@
 <?php
 
 
+/************************************************************************************************ */
+/*                         Sistema desenvolvido para estudo                                       */
+/*                               creiado 14/01/2020                                               */
+/*          proibida a venda desse sistema sem autorização do desenvolvedor                       */
+/*                      entre encontado com Luizfernandoluck@hotmail.com                          */
+/*                                                                                                */
+/************************************************************************************************ */
 
 /***********************************grupo de rotas*********************************************** */
 
@@ -24,9 +31,13 @@ Route::group(['middleware' => 'auth'], function () {
     
     //tela de estoque
     route::get('/estoque', 'geralController@estoque')->name('/estoque');
-    
+    //novo estoque
+    route::get('/cadastroestoque', 'geralController@cadastroestoque')->name('/cadastroestoque');
     //tela de funcionario
     route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
+    //novo funcionario 
+    route::get('/cadastrofuncionario', 'geralController@cadastrofuncionario')->name('/cadastrofuncionario');
+    
     
     //cadastro funcionario
     route::get('/cadastrofuncionario', 'geralController@cadastrofuncionario')->name('/cadastrofuncionario');

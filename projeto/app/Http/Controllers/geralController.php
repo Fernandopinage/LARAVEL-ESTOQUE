@@ -33,17 +33,25 @@ class geralController extends Controller
     }
     //--------- fim ----------
     
-    //funçao estoque
+    //funçao estoque cadastroestoque
     public function estoque(){
 
         return view('telas.estoque');
     }
     //--------- fim ----------
 
+    //funçao estoque 
+    public function cadastroestoque(){
+
+        return view('telas.controlerEstoque');
+    }
+    //--------- fim ----------
+
+
     //funçao estoque
     public function funcionario(){
 
-        return view('telas.funcionario');
+        return view('telas.controlerFuncionario');
     }
     //--------- fim ----------
     
@@ -51,7 +59,7 @@ class geralController extends Controller
     public function cadastrofuncionario(){
 
         
-        return view('telas.controlerFuncionario');
+        return view('telas.funcionario');
     }
     //--------- fim ----------
     

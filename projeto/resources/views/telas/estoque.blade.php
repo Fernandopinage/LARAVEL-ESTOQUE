@@ -2,10 +2,10 @@
 
 @section('conteudo')
         <div class="container">
-            <h1>Estoque</h1>
+            <h1><img src='{{'img/estoque2.png'}}'>Estoque</h1>
             
             <div class="text-right">
-                <a class="btn-success btn-lg" href="{{"/cadastrofornecedor"}}">ESTOQUE</a>
+                <a class="btn-success btn-lg" href="{{"/cadastroestoque"}}"><img src='{{'img/estoque.png'}}'> ESTOQUE</a>
             </div>
         </div>
         <br>

@@ -4,9 +4,9 @@
 
 <div class="container">
 
-    <h1>Fornecedor</h1>
+    <h1><img src='{{'img/fornecedor2.png'}}'> Fornecedor</h1>
     <div class="text-right">
-      <a class="btn-success btn-lg" href="{{"/cadastrofornecedor"}}">FORNECEDOR</a>
+      <a class="btn-success btn-lg" href="{{"/cadastrofornecedor"}}"><img src='{{'img/fornecedor.png'}}'> FORNECEDOR</a>
     </div>
     
 </div>

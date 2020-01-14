@@ -4,9 +4,9 @@
 
     <div class="container">
 
-        <h1>funcionario</h1>
+        <h1><img src='{{'img/grupo2.png'}}'> Funcionario</h1>
         <div class="text-right">
-            <a class="btn-success btn-lg" href="{{"/funcionario"}}">FUNCIONARIO</a>
+            <a class="btn-success btn-lg" href="{{"/cadastrofuncionario"}}"><img src='{{'img/addP.png'}}'> FUNCIONARIO</a>
         </div>
     </div>
     <br>
