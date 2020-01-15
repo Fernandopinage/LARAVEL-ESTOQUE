@@ -19,6 +19,7 @@ class CreateFornecedorsTable extends Migration
             $table->integer('telefone');
             $table->string('cidade');
             $table->string('cep');
+            $table->string('bairro');
             $table->string('rua');
             $table->integer('cnpj');
             $table->string('marca');

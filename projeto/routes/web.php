@@ -27,12 +27,16 @@ Route::group(['middleware' => 'auth'], function () {
     route::get('/fornecedores', 'geralController@controlerFornecedores')->name('/fornecedores');
     //tela de cadastro fornecedores
     route::get('/cadastrofornecedor', 'geralController@cadastrofornecedor')->name('/cadastrofornecedor');
-    
+    //cadastrando fornecedores
+    route::post('/fornecedorcadastro','fornecedorController@cadastroFornecedor')->name('/fornecedorcadastro');
+
     
     //tela de estoque
     route::get('/estoque', 'geralController@estoque')->name('/estoque');
     //novo estoque
     route::get('/cadastroestoque', 'geralController@cadastroestoque')->name('/cadastroestoque');
+
+
     //tela de funcionario
     route::get('/funcionario', 'geralController@funcionario')->name('/funcionario');
     //novo funcionario 
