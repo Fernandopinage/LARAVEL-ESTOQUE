@@ -51,6 +51,8 @@ class funcionarioController extends Controller
     }
      /** ******** fim ********** */
 
+     
+     
      public function logaut(){
 
 
@@ -58,5 +60,7 @@ class funcionarioController extends Controller
         
         return redirect('/');
      }
+
+     
       
 }

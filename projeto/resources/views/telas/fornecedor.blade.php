@@ -13,9 +13,9 @@
             <form method="POST" action="{{'/fornecedorcadastro'}}">
                 @csrf        
                     <div class="form-group">
-                        <label>Nome Marca:</label> <input type="text" name="marca" class="input-medio">
-                        <label>CNPJ:</label> <input type="text" name="cnpj" class="input-pequeno">
-                        <label>Cep:</label> <input type="text" name="cep" class="input-pequeno">
+                        <label>Nome Marca:</label> <input type="text" name="marca" class="input-pequeno" placeholder="Marca do Produto">
+                        <label>CNPJ:</label> <input type="text" name="cnpj" class="input-medio" placeholder=" XX. XXX. XXX/XXXX-XX">
+                        <label>Cep:</label> <input type="text" name="cep" class="input-pequeno" placeholder="XXXXX-XXX">
                     </div>
                     <div class="form-group">
                         
@@ -25,8 +25,8 @@
                     </div>
                     <div class="form-group">
                         
-                        <label>Telefone:</label> <input type="text" name="telefone" class="input-pequeno">
-                        <label>Celular:</label> <input type="text" name="celular" class="input-pequeno">
+                        <label>Telefone:</label> <input type="text" name="telefone" class="input-pequeno" placeholder="(00)0 0000-0000">
+                        <label>Celular:</label> <input type="text" name="celular" class="input-pequeno" placeholder="(00)0 0000-0000">
                         
                     </div>
                     <br>

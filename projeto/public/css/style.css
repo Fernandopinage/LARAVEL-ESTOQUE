@@ -72,6 +72,10 @@ span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
+#disabled{
+
+    background-color: #d9dcdf;
+}
 
 /****************************CSS do corpo********************************************/
 .container  {  
@@ -107,6 +111,9 @@ span{
 }
 .text-right{
     text-align:right!important
+}
+.text-center{
+    text-align: center;
 }
 h1{
     font-size:2.25rem;
@@ -249,7 +256,24 @@ button{
 .btn-success:hover{
     background-color: #13a82c;
 }
+.btn-danger{
+    background-color:#f31d1a;
+    color: white;
+    font-family: arial;
+}
 
+.btn-danger:hover{
+    background-color: #c00a07;
+}
+.btn-warning{
+    background-color:#cf540d;
+    color: white;
+    font-family: arial;
+}
+
+.btn-warning:hover{
+    background-color: #bb4a08;
+}
 /**********************************Tabela do bootstrap******************************************/
 .table td,
 .table th{

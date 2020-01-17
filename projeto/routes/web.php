@@ -32,9 +32,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     
     //tela de estoque
-    route::get('/estoque', 'geralController@estoque')->name('/estoque');
-    //novo estoque
-    route::get('/cadastroestoque', 'geralController@cadastroestoque')->name('/cadastroestoque');
+    
+    route::get('/estoque', 'geralController@cadastroestoque')->name('/cadastroestoque');
 
 
     //tela de funcionario

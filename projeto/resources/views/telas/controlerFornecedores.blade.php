@@ -12,72 +12,46 @@
 </div>
 <br>
 <div class="container">
-
+  <div style="overflow: auto; width: 900px; height: 400px;"> 
     <table class="table table-hover table-dark">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">codigo</th>
+            <th scope="col">cnpj</th>
+            <th scope="col">nome</th>
+            <th scope="col">cep</th>
+            <th scope="col">cidade</th>
+            <th scope="col">rua</th>
+            <th scope="col">bairro</th>
+            <th scope="col">telefone</th>
+            <th scope="col">celular</th>
+            <th scope="col">editar</th>
+            <th scope="col">excluir</th>
           </tr>
         </thead>
         <tbody>
+          @foreach ($fornecedor as $fornecedor)
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+
+                
+            <th>{{$fornecedor->id}}</th>
+            <th>{{$fornecedor->cnpj}}</th>
+            <th>{{$fornecedor->marca}}</th>
+            <th>{{$fornecedor->cep}}</th>
+            <th>{{$fornecedor->cidade}}</th>
+            <th>{{$fornecedor->rua}}</th>
+            <th>{{$fornecedor->bairro}}</th>
+            <th>{{$fornecedor->telefone}}</th>
+            <th>{{$fornecedor->celular}}</th>
+            <th><button class="btn-primary">editar</button></th>
+            <th><button class="btn-danger">excluir</button></th>
+
+            @endforeach
+          </tbody>
+        </table>
       <br><br>
 
-      
+  </div> 
 </div>
     
 @endsection

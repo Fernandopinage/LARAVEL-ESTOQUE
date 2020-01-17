@@ -25,4 +25,6 @@ class fornecedorController extends Controller
         return redirect('cadastrofornecedor');
 
     }
+
+      
 }

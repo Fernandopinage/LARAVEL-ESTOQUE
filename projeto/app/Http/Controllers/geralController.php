@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\fornecedor;
+use App\User;
 class geralController extends Controller
 {
 
@@ -21,10 +22,15 @@ class geralController extends Controller
     // funçao fornecedor
     public function controlerFornecedores (){
 
+        $fornecedor = fornecedor ::all();
+            
         
-        return view('telas.controlerFornecedores');
+        return view('telas.controlerFornecedores',compact('fornecedor'));
     }
     //--------- fim ----------
+
+    
+
     // funçao fornecedor
     public function cadastrofornecedor (){
 
@@ -33,12 +39,7 @@ class geralController extends Controller
     }
     //--------- fim ----------
     
-    //funçao estoque cadastroestoque
-    public function estoque(){
-
-        return view('telas.estoque');
-    }
-    //--------- fim ----------
+    
 
     //funçao estoque 
     public function cadastroestoque(){
@@ -51,7 +52,9 @@ class geralController extends Controller
     //funçao estoque
     public function funcionario(){
 
-        return view('telas.controlerFuncionario');
+        $usuario = User :: all();
+
+        return view('telas.controlerFuncionario',compact('usuario'));
     }
     //--------- fim ----------
     
