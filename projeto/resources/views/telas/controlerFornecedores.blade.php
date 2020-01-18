@@ -43,8 +43,8 @@
             <th>{{$fornecedor->bairro}}</th>
             <th>{{$fornecedor->telefone}}</th>
             <th>{{$fornecedor->celular}}</th>
-            <th><button class="btn-primary">editar</button></th>
-            <th><button class="btn-danger">excluir</button></th>
+            <th><button class="btn-primary"><a href="/editar/{{ $fornecedor->id }}" > editar </a></button></th>
+            <th><button class="btn-danger"><a href="/excluir/{{ $fornecedor->id }}" > excluir </a></button></th>
 
             @endforeach
           </tbody>
